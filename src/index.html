@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <script
+      src="https://kit.fontawesome.com/c815d48bf5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Weather App</h1>
+      <i class="fa-solid fa-cloud-sun"></i>
+    </nav>
+    <main>
+      <div class="input-container">
+        <input type="text" id="location" placeholder="Enter location" />
+        <button>Search</button>
+      </div>
+      <div class="cards-container">
+        <div id="weatherCardContainer" class="hidden">
+            <div class="weather-card">
+            <h2 class="city-name" id="cityName"></h2>
+            <div class="weather-info">
+              <p>
+                <span class="label">Conditions:</span>
+                <span class="weather-value" id="weatherConditions"
+                  >Partially cloudy</span
+                >
+              </p>
+              <p>
+                <span class="label">Temperature:</span>
+                <span class="weather-value" id="temperature"></span>
+              </p>
+              <p>
+                <span class="label">Feels like:</span>
+                <span class="weather-value" id="feelsLike"></span>
+              </p>
+              <p>
+                <span class="label">Humidity:</span>
+                <span class="weather-value" id="humidity"></span>
+              </p>
+              <p>
+                <span class="label">Wind:</span>
+                <span class="weather-value" id="wind"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
